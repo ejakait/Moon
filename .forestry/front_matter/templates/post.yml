@@ -19,3 +19,16 @@ fields:
 - type: tag_list
   name: tags
   label: tags
+- type: file
+  name: feature
+  label: feature
+  description: image
+- type: select
+  config:
+    source:
+      type: simple
+    options:
+    - 'true'
+    - 'false'
+  label: comments
+  name: comments
