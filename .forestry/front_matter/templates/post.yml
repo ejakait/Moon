@@ -32,3 +32,5 @@ fields:
     - 'false'
   label: comments
   name: comments
+pages:
+- _posts/eyy.md
