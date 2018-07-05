@@ -12,3 +12,7 @@ fields:
   label: date
   config:
     date_format: YYYY/MM/DD
+- type: text
+- type: textarea
+  name: excerpt
+  label: excerpt
