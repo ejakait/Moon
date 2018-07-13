@@ -33,3 +33,5 @@ fields:
     - 'false'
   label: comments
   name: comments
+pages:
+- _posts/here-is-another-one.md
