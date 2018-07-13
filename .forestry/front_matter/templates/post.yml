@@ -1,0 +1,35 @@
+---
+label: post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  default: post
+  label: layout
+  name: layout
+- type: text
+  label: title
+  name: title
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: date
+- type: textarea
+  name: excerpt
+  label: excerpt
+- type: tag_list
+  name: tags
+  label: tags
+- type: file
+  name: feature
+  label: feature
+- type: select
+  config:
+    source:
+      type: simple
+    options:
+    - 'true'
+    - 'false'
+  label: comments
+  name: comments
