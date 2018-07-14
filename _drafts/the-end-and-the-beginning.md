@@ -7,7 +7,7 @@ excerpt: I would need develop a lot of what I will say now are painful habits bu
   and challenging field.
 tags:
 - datascience
-feature: "/uploads/fire.jpg"
+feature: "/uploads/galaxy.jpg"
 comments: 'true'
 
 ---
