@@ -1,10 +1,9 @@
 ---
-title: In a galaxy far away
+title: Into the Rabbit Hole
 layout: post
 date: 2018-07-15 00:00:00 +0000
-excerpt: I would need develop a lot of what I will say now are painful habits but
-  are important in creating and fostering the right mindset toward a relatively new
-  and challenging field.
+excerpt: For my first trick I will attempt to conjure an understanding of all things
+  data science with help of a large snake, a panda, a science kit and many more.
 tags:
 - datascience
 - the beginning
