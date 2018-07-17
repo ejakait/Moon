@@ -24,4 +24,4 @@ For my first trick I will attempt to conjure an understanding of all things data
 
 My next post will cover the [House Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) where we will attempt to  predict the price of a house based on its features. It is geared towards practicing feature engineering which involves finding the right attributes to use in our prediction model(regression models).
 
-###### _Just and FYI, I have no formal training as a data scientist and little experience in the field, these posts reflect a journey towards obtaining both those things._ 
+#### _Just and FYI, I have no formal training as a data scientist and little experience in the field, these posts reflect a journey towards obtaining both those things._ 
