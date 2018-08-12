@@ -8,7 +8,7 @@ excerpt: 'If you''ve read any guides or blog posts about how to become a data sc
   models is communication. '
 tags:
 - Data Science
-feature: "/uploads/rabbithole.jpg"
+feature: "/uploads/rabbithole2.jpg"
 comments: 'true'
 
 ---
