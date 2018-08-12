@@ -20,8 +20,6 @@ There is no better way to communicate your thoughts to large audience than throu
 
 ![](https://www.propertyme.com.au/media/k2/items/cache/954fb0ebf1d84fb921bfb0b6e045d57f_L.jpg)
 
-For my first trick I will attempt to conjure an understanding of all things data science with help of a large snake, a panda, a science kit and many more. I will be covering topical content from the Data Science from Scratch along with a host of other resources and some cool stuff I learn from doing [Kaggle](http://kaggle.com) competitions(The Knowledge and Playground competitions). 
+For my first trick I will attempt to conjure an understanding of all things data science with help of a large snake, a panda, a science kit and many more. I will be covering topical content from the Data Science from Scratch along with a host of other resources as well as some cool stuff I learn from doing [Kaggle](http://kaggle.com) competitions(The Knowledge and Playground competitions).
 
-My next post will cover the [House Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) where we will attempt to  predict the price of a house based on its features. It is geared towards practicing feature engineering which involves finding the right attributes to use in our prediction model(regression models).
-
-#### _Just and FYI, I have no formal training as a data scientist and little experience in the field, these posts reflect a journey towards obtaining both those things._ 
+My next post will cover the [House Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) where we will attempt to  predict the price of a house based on its features. It is geared towards practicing feature engineering which involves finding the right attributes to use in our prediction model(Gradient Boosting).
