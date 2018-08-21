@@ -2,7 +2,9 @@
 title: Kaggle House Prices - Part 1
 layout: post
 date: 2018-08-12 00:00:00 +0000
-excerpt: ''
+excerpt: 'This is the first post in series that goes through the House Prices: Advanced
+  Regression Techniques Kaggle Dataset with the goal of learning and practicing machine
+  learning techniques.'
 tags:
 - Data Science
 - Kaggle
@@ -10,6 +12,7 @@ tags:
 - Python
 - Jupyter
 - EDA
+- Feature Engineering
 feature: "/uploads/indiana2.png"
 comments: 'true'
 
@@ -20,25 +23,36 @@ comments: 'true'
 
 ![](https://kaggle2.blob.core.windows.net/competitions/kaggle/5407/logos/front_page.png)
 
-In this post we will be getting the lay of the land so to speak while covering Exploratory Data Analysis(EDA) of a Kaggle data set,[ House Prices: Advanced Regression Techniques.](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
+### Problem and Approach
 
-If you want follow along with the exercise, you might need a couple of things,
+This is the first post in series that goes through the [House Prices: Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) Kaggle [Dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) with the goal of learning and practicing machine learning techniques.
 
-1. Python3.6
-2. Pip
-3. Jupyter Notebook
-
-Or,
+#### Wanna Follow
 
 If you prefer less setup, I would suggest you take a look at Microsoft Azure Notebooks. It has most of what we will be using already installed and it runs Jupyter Lab.
 
-So what is Exploratory Data Analysis anyway and what is its purpose?
+### The Process
 
-The simple answer, exploratory data analysis techniques have been developed to aid in determining important characteristics in the data.
+![](/uploads/embiid.jpg)
 
-There is a lot more to talk about with EDA such as the types and their importance in gaining a better understanding of our data, but we will discuss them as they arise in the course of tackling tasks in the machine learning workflow.
+**Generally, the approach to a machine learning problem is**:
 
-Well lets start from the very beginning, by understanding the problem. If we take a look at the data set as we will soon do, we can see that it is a [labeled dataset](https://stackoverflow.com/questions/19170603/what-is-the-difference-between-labeled-and-unlabeled-data). This narrows down our machine learning options to Supervised Machine Learning which breaks down to either Regression or Classification. The choice of machine learning techniques is reliant on your data and its characteristics as well as the expected outcome.
+1. Understanding the data and the problem
+2. Exploratory Data Analysis and Data Cleaning
+3. Feature Engineering and Feature Selection
+4. Model Selection and Comparison
+5. Model Optimization
+6. Interpretation of results
+
+#### Understanding the data and the problem
+
+Well lets start from the very beginning, by understanding the problem. Ideally, we would be more experienced in real estate to better inform this part of the process, however this is often not the case and we most frequently find ourselves dealing with a new field. That said, taking a high level look at the task, we need to predict the final price of houses located in Ames, Iowa based on their 79 features.
+
+If we take a look at the data set as we will soon do, we can draw a few conclusions. First, because we are looking at a [labeled dataset](https://stackoverflow.com/questions/19170603/what-is-the-difference-between-labeled-and-unlabeled-data), it narrows down our machine learning techniques to Supervised Machine Learning which breaks down to either Regression or Classification. 
+
+The choice of machine learning techniques is reliant on your data and its characteristics as well as the expected outcome. 
+
+Though the exact model is not chosen at this point we can get general idea of the class of supervised machine learning techniques we can use by looking at our target variable, '_SalePrice_' or the final price of a house.
 
 We can take a look at the dataset using Jupyter and Python Pandas. The data is stored in a CSV file so we will use the pandas read_csv function. Pandas can be installed using pip like so,
 
@@ -46,17 +60,28 @@ We can take a look at the dataset using Jupyter and Python Pandas. The data is s
 
 First we import the pandas module as 'pd' so we don't have to type pandas every time we call a function from it.
 
-\#import pandas
+    import pandas as pd
 
-Next we can import the dataset using the aforementioned function read_csv to create a [data frame](https://github.com/mobileink/data.frame/wiki/What-is-a-Data-Frame%3F) and assign it to a variable. The [data](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) provided comes in two files a training set which will be used to help our model learn and a test set that will be used to evaluate how well the chosen model performed. 
+Next we can import the dataset using the aforementioned function read_csv to create a [data frame](https://github.com/mobileink/data.frame/wiki/What-is-a-Data-Frame%3F) and assign it to a variable. The [data](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) provided comes in two files a training set which will be used to help our model learn and a test set that will be used to evaluate how well the chosen model performed.
 
     df_train = pd.read_csv('train.csv')
     df_test = pd.read_csv('test.csv')
 
-From the description of the problem,
+We can now performs some operations on the imported data. 
 
-_'Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this playground competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence._
+    # Showing the first five entries of the training dataset
+    df_train.head() 
 
-_With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.'_
+The output,
 
-we can surmise that our target variable is the final price or SalePrice of a house and that it is a varying numerical figure. This also helps us to figure out what kind of models we can use to solve the problem. Regression is the answer to our problems. If it were a classification problem our target variable would have more discrete outcome for example the iris dataset that involves correctly labeling a flower's species(_Iris setosa_, _Iris virginica_, _Iris versicolor_) based on its characteristics(petal and sepal length/width etc)
+![](/uploads/khpp-dftrain-head-1.PNG)
+
+We can tell a few things already from this small snapshot. We we have columns with missing values. It is also apparent that our data comes in varying types, both numerical and categorical.
+
+    df_train.info()
+
+the output here is a description of the data:
+
+![](/uploads/khpp-dftrain-info.PNG)
+
+In pandas this is represented as data types, integers and floats which are our numerical features and categorical features with the object type. Even so, the difference isn't always obvious, some numerical features might actually be categorical and vice versa, so it pays get an understanding of the description of every feature.
