@@ -48,9 +48,9 @@ If you prefer less setup, I would suggest you take a look at Microsoft Azure Not
 
 Well lets start from the very beginning, by understanding the problem. Ideally, we would be more experienced in real estate to better inform this part of the process, however this is often not the case and we most frequently find ourselves dealing with a new field. That said, taking a high level look at the task, we need to predict the final price of houses located in Ames, Iowa based on their 79 features.
 
-If we take a look at the data set as we will soon do, we can draw a few conclusions. First, because we are looking at a [labeled dataset](https://stackoverflow.com/questions/19170603/what-is-the-difference-between-labeled-and-unlabeled-data), it narrows down our machine learning techniques to Supervised Machine Learning which breaks down to either Regression or Classification. 
+If we take a look at the data set as we will soon do, we can draw a few conclusions. First, because we are looking at a [labeled dataset](https://stackoverflow.com/questions/19170603/what-is-the-difference-between-labeled-and-unlabeled-data), it narrows down our machine learning techniques to Supervised Machine Learning which breaks down to either Regression or Classification.
 
-The choice of machine learning techniques is reliant on your data and its characteristics as well as the expected outcome. 
+The choice of machine learning techniques is reliant on your data and its characteristics as well as the expected outcome.
 
 Though the exact model is not chosen at this point we can get general idea of the class of supervised machine learning techniques we can use by looking at our target variable, '_SalePrice_' or the final price of a house.
 
@@ -67,7 +67,7 @@ Next we can import the dataset using the aforementioned function read_csv to cre
     df_train = pd.read_csv('train.csv')
     df_test = pd.read_csv('test.csv')
 
-We can now performs some operations on the imported data. 
+We can now performs some operations on the imported data.
 
     # Showing the first five entries of the training dataset
     df_train.head() 
