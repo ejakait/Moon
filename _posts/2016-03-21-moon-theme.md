@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moon Jekyll Theme
-date: 2016-04-06 00:00:00 +0000
+date: 2016-04-06T00:00:00.000+00:00
 excerpt: Minimal, one column Jekyll theme for your blog.
 project: true
 tag:
