@@ -1,4 +1,22 @@
 ---
 label: project
-hide_body: false
-fields: []
+hide_body: true
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: excerpt
+  type: text
+  config:
+    required: false
+  label: excerpt
+- name: comments
+  type: boolean
+  label: comments
