@@ -1,6 +1,7 @@
 ---
 layout: project
-title: All Projects
-excerpt: "A List of Projects"
+title: Kaggle House Prices Prediction
+excerpt: Kaggle House Prices Prediction
 comments: false
+
 ---
