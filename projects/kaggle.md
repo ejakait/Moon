@@ -7,6 +7,7 @@ tags:
 - Data Science
 feature: "/uploads/download.jpg"
 comments: 'true'
+project: true
 
 ---
 Just another Post
