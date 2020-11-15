@@ -20,5 +20,3 @@ fields:
 - name: comments
   type: boolean
   label: comments
-pages:
-- _posts/2020-11-15-symatech-labs-website.md
