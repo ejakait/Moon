@@ -2,7 +2,7 @@
 layout: post
 title: Symatech Labs Website
 date: 2020-11-14 21:00:00 +0000
-excerpt: ''
+excerpt: Single page website
 tags:
 - Web Design
 feature: "/uploads/symatech.PNG"
