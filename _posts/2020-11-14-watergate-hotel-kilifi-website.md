@@ -7,8 +7,8 @@ excerpt: |2-
   Watergate Hotel Kilifi Website
 tags: []
 feature: "/uploads/watergate.PNG"
-comments: ''
-project: false
+comments: 'true'
+project: true
 
 ---
 ### The project
