@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syntax Highlighting Post
-date: 2013-08-16 00:00:00 +0000
+date: 2013-08-16T00:00:00.000+00:00
 excerpt: Demo post displaying the various ways of highlighting code in Markdown.
 tags:
 - sample post
