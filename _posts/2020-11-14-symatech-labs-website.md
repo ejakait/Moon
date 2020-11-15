@@ -10,4 +10,14 @@ comments: 'true'
 project: true
 
 ---
-This is a project I worked on during my internship at Symatech Labs, designing and developing their website.
+### The project
+
+This is a project I worked on during my internship at Symatech Labs, designing and developing their website. It is a simple single page application made with HTML, CSS JS and JQuery. Let me know what you think.
+
+ 
+
+![](/uploads/sym1.PNG)
+
+![](/uploads/sym2.PNG)
+
+![](/uploads/sym3.PNG)![](/uploads/sym4.PNG)
